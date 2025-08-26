@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  background-color: #6bb1a1;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #DBEDF3;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 0 #DA0463;
+  /* margin-bottom: 0; */
+  margin-top: 10px;
+
+}
+
+h2{
+    color: #0b352b;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+/* BUTTON INDIVIDUAL STYLE  */
+.a {
+  background-image: url("./images/badruTamam.jpeg");
+
+}
+
+.s {
+  background-image: url("./images/cards.jpeg");
+
+}
+
+.d {
+  background-image: url("./images/Faith.jfif");
+ 
+}
+
+.f {
+  background-image: url("./images/God.jpeg");
+
+}
+
+.t {
+  background-image: url("./images/littleOne.jfif");
+
+}
+
+.j {
+background-image: url("./images/mursalu.jfif");
+}
+
+.k {
+background-image: url("./images/OnlyGod.jfif");
+}
+.l{
+  background-image: url("./images/sunflower.jpeg");
+
+}
+
+.o{
+  background-image: url("./images/umi.jpeg");
+
+}
+.p{
+background-image: url("./images/God.jpeg");
+}
+
+/* THE DIVISIONAL ELEMENT FROM HERE  */
+.set {
+  /* margin: 10% auto; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+
+
+.currentM_Container{
+  width: 40%;
+  height: 50px;
+  margin: auto;
+  font-family:cursive;
+  /* border: 2px solid black; */
+}
+
+/* .game-over {
+  background-color: red;
+  opacity: 0.8;
+} */
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #4f7e8e;
+  opacity: 0.5;
+}
+
+
+
+.tone {
+  outline: none;
+  border: 10px solid #0b352b;
+  font-size: 3rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 40px;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  margin: 7px;
+  background-color: white;
+  
+}
+
+.screenTip{
+  background-color: lightblue;
+  height: 40px;
+  /* font-size: 12px; */
+  width: 130px;
+  border-radius: 3%;
+  position: absolute;
+  text-align: center;
+  display: none;
+  border: 5px solid black;
+  
+}
+
+/* Adding Animation to text */
+
+.currentM{
+  position: relative;  /* allows moving element relative to its normal position*/
+  animation-name: text-move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+    /*property to animate, duration, and timing function*/
+  
+}
+
+/* defining Animation key Frames */
+
+@keyframes text-move {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(200px);
+  }
+}
