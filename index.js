@@ -54,7 +54,7 @@ function sounds(event){
             currentVoice.play(); 
             break;
         case "d":
-            currentVoice = new Audio('./sounds/faith.mp3');
+            currentVoice = new Audio('./sounds/Faith.mp3');
             currentVoice.play();
             break;
         case "f":
