@@ -5,7 +5,11 @@ for(i=0;i<click.length;i++){
     click[i].addEventListener("click",function(){
         var btnTouch = this.textContent;
         sounds(btnTouch);
-        document.querySelector(".currentM").textContent = this.title
+        document.querySelector(".currentM").textContent = this.title;
+        this.classList.add("pressed")
+        setTimeout(()=>{
+            this.classList.remove("pressed");
+        },100)
     });
     
 }
@@ -16,8 +20,9 @@ function Do(event){
     
     sounds(event.key);
     // document.querySelector(".currentM").textContent = this.title
+    let key = event.key.toLowerCase();
     
-    let activeButton = document.querySelector("."+event.key+".tone");
+    let activeButton = document.querySelector("."+key);
     if(activeButton){
         activeButton.classList.add("pressed");
         setTimeout(()=>{
@@ -26,7 +31,6 @@ function Do(event){
         let currentM = document.querySelector(".currentM");
         // console.log(activeButton.title)
         currentM.textContent = activeButton.title;
-
         
     }
     
