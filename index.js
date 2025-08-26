@@ -17,12 +17,12 @@ for(i=0;i<click.length;i++){
 document.addEventListener("keydown",Do)
 function Do(event){
     console.log(event.key)
-    
-    sounds(event.key);
+     let keG = event.key.toLowerCase();
+    sounds(keG);
     // document.querySelector(".currentM").textContent = this.title
-    let key = event.key.toLowerCase();
+   
     
-    let activeButton = document.querySelector("."+key);
+    let activeButton = document.querySelector("."+keG);
     if(activeButton){
         activeButton.classList.add("pressed");
         setTimeout(()=>{
